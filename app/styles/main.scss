@@ -50,6 +50,8 @@ html {
 body {
   margin-bottom: 40px; /* Margin bottom by footer height */
 }
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -68,21 +70,34 @@ body {
   color: #f00;
 }
 
-
-.navbar-brand img {
-  height: 50px;
+/* nav bar styles
+-------------------------------------------------- */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-// card
+.navbar-brand img {
+  height: 100px;
+}
 
+/* card styles
+-------------------------------------------------- */
 .card {
   height: 340px;
 }
 
-.card-header .score {
-  float: right;
-  font-weight: bold;
+.card-header {
+  &:first-child {
+    border-radius: 0;
+  }
+  .score {
+    float: right;
+    font-weight: bold;
+  }
 }
+
+
 
 /* Customize container */
 @media (min-width: 48em) {
