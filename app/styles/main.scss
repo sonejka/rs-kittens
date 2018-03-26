@@ -11,7 +11,6 @@
   padding: 0.2em 0;
 }
 
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -40,17 +39,16 @@
   border-top: .05rem solid #e5e5e5;
 }
 
-
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 40px; /* Margin bottom by footer height */
 }
-
 
 .footer {
   position: absolute;
@@ -88,7 +86,7 @@ body {
 /* card styles
 -------------------------------------------------- */
 .card {
-  height: 340px;
+  min-height: 250px;
 }
 
 .card-header {
@@ -101,6 +99,10 @@ body {
   }
 }
 
+.card-footer {
+  background: none;
+  border: none;
+}
 
 /* login form styles
 -------------------------------------------------- */
@@ -131,7 +133,6 @@ body {
   }
 }
 
-
 /* Customize container */
 @media (min-width: 48em) {
   //.container {
@@ -139,12 +140,11 @@ body {
   //}
 }
 
-
-
 /* Supporting marketing content */
 .marketing {
   margin: 3rem 0;
 }
+
 .marketing p + h4 {
   margin-top: 1.5rem;
 }

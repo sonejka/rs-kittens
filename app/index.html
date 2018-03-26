@@ -15,6 +15,8 @@
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
@@ -48,8 +50,16 @@
 <main role="main" class="container pt-5 mt-5 pb-5">
 
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-12">
       <h2>Tasks</h2>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+      <p><i class="fab fa-github"></i> Your github private repository <a href="#">here</a></p>
+
     </div>
     <div class="col-lg-6 text-right">
       <p>Your current position is 532!</p>
@@ -57,31 +67,15 @@
     </div>
   </div>
 
-  <div class="row mb-5">
-    <div class="col-lg-4 col-md-6">
-      <div class="card bg-secondary mb-3">
-        <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">CodeWars Tasks</h5>
-          <p class="card-text">Some quick example text to build on the card title .</p>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Write your Codewars username. Pay attention to upper/lower case</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                     placeholder="username">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+  <div class="card-deck mb-3">
+    <div class="card bg-secondary mb-3">
+      <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">CodeWars Tasks</h5>
+        <p class="card-text">Some quick example text to build on the card title .</p>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card bg-secondary mb-3">
-        <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">Correct expression</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+      <div class="card-footer">
+        <small class="text-muted">
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Choose repo</label>
@@ -90,16 +84,21 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-        </div>
+        </small>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card bg-secondary mb-3">
-        <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">Correct expression</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+
+    <div class="card bg-secondary mb-3">
+      <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">Correct expression</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+
+      </div>
+
+      <div class="card-footer">
+        <small class="text-muted">
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Choose repo</label>
@@ -108,19 +107,45 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-        </div>
+        </small>
+      </div>
+
+    </div>
+
+    <div class="card bg-secondary mb-3">
+      <div class="card-header">Not submitted yet! <span class="score">0%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">Correct expression</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+
+      <div class="card-footer">
+        <small class="text-muted">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Choose repo</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                     placeholder="Enter link">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </small>
       </div>
     </div>
   </div>
 
-  <div class="row mb-5">
-    <div class="col-lg-4 col-md-6">
-      <div class="card bg-secondary">
-        <div class="card-header">Not submitted yet!<span class="score">0%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">Correct expression</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+  <div class="card-deck mb-3">
+
+    <div class="card bg-secondary mb-3">
+      <div class="card-header">Not submitted yet!<span class="score">0%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">Correct expression</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Choose repo</label>
@@ -129,32 +154,38 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-        </div>
+        </small>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card border-success mb-3">
-        <div class="card-header text-white bg-success">Done! <span class="score">100%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">Exchange money</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
 
-        </div>
+
+    <div class="card border-success mb-3">
+      <div class="card-header text-white bg-success">Done! <span class="score">100%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">Exchange money</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
       </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card border-danger mb-3">
-        <div class="card-header text-white bg-danger">The deadline has passed <span class="score">0%</span></div>
-        <div class="card-body">
-          <h5 class="card-title">From your school teacher</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
+
+      <div class="card-footer">
+
       </div>
+
     </div>
+
+
+    <div class="card border-danger mb-3">
+      <div class="card-header text-white bg-danger">The deadline has passed <span class="score">0%</span></div>
+      <div class="card-body">
+        <h5 class="card-title">From your school teacher</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+      <div class="card-footer"></div>
+    </div>
+
   </div>
 
   <div class="row">
@@ -166,6 +197,8 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
+        <div class="card-footer"></div>
+
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
@@ -176,6 +209,7 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
+        <div class="card-footer"></div>
       </div>
     </div>
     <div class="col-lg-4 col-md-6">
@@ -186,6 +220,7 @@
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
             content.</p>
         </div>
+        <div class="card-footer"></div>
       </div>
     </div>
 
