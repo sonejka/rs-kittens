@@ -122,6 +122,28 @@ body {
 -------------------------------------------------- */
 
 .schedule-desc {
+
+  padding: 0.5rem 0 3rem;
+
+  .col-lg-2.current {
+    position: relative;
+  }
+
+  .col-lg-2.current:before {
+    content: ".";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -5px;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-left-color: red;
+  }
+
+
   .card-header {
     padding: 0;
     .btn {

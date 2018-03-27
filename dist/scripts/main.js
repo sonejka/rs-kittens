@@ -1,1 +1,1 @@
-"use strict";$(".collapse").collapse();
+"use strict";
