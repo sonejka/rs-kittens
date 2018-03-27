@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c415f305-63ee-4477-966c-baf2ba568c17" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/schedule.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/logo-epam.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/logo-github.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/logo-imaguru.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/logo-rsschool.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/logo-rsschool2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/profile.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/your-mentor.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/profile.html" afterPath="$PROJECT_DIR$/app/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/main.js" afterPath="$PROJECT_DIR$/app/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.scss" afterPath="$PROJECT_DIR$/app/styles/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/your-mentor.html" afterPath="$PROJECT_DIR$/app/your-mentor.html" />
-    </list>
+    <list default="true" id="c415f305-63ee-4477-966c-baf2ba568c17" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -63,8 +40,8 @@
       <file leaf-file-name="schedule.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/schedule.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="339" column="51" lean-forward="true" selection-start-line="339" selection-start-column="51" selection-end-line="339" selection-end-column="51" />
+            <state relative-caret-position="363">
+              <caret line="338" column="33" lean-forward="false" selection-start-line="338" selection-start-column="33" selection-end-line="338" selection-end-column="33" />
               <folding>
                 <marker date="1522146498117" expanded="true" signature="593:744" ph="..." />
                 <marker date="1522146498117" expanded="true" signature="686:712" ph="..." />
@@ -209,12 +186,12 @@
       <updated>1521710639778</updated>
       <workItem from="1521710641256" duration="3380000" />
       <workItem from="1521720698592" duration="4547000" />
-      <workItem from="1522048848265" duration="14559000" />
+      <workItem from="1522048848265" duration="14768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22486000" />
+    <option name="totallyTimeSpent" value="22695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
@@ -419,8 +396,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="339" column="51" lean-forward="true" selection-start-line="339" selection-start-column="51" selection-end-line="339" selection-end-column="51" />
+        <state relative-caret-position="363">
+          <caret line="338" column="33" lean-forward="false" selection-start-line="338" selection-start-column="33" selection-end-line="338" selection-end-column="33" />
           <folding>
             <marker date="1522146498117" expanded="true" signature="593:744" ph="..." />
             <marker date="1522146498117" expanded="true" signature="686:712" ph="..." />
