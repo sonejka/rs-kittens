@@ -73,6 +73,18 @@ body {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
+
+  .container {
+    position: relative;
+
+    .logged-user {
+      position: absolute;
+      right: 30px;
+      top: 5px;
+      text-transform: capitalize;
+    }
+
+  }
 }
 
 .navbar-brand img {
@@ -83,9 +95,10 @@ body {
   margin: 0;
 }
 
+
 /* card styles
 -------------------------------------------------- */
-.card {
+.card-deck .card {
   min-height: 250px;
 }
 
@@ -103,6 +116,37 @@ body {
   background: none;
   border: none;
 }
+
+
+/* shedule styles
+-------------------------------------------------- */
+
+.schedule-desc {
+  .card-header {
+    padding: 0;
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      text-transform: capitalize;
+      text-decoration: none;
+
+      .row span:last-child {
+        text-align: right;
+      }
+    }
+
+    .badge {
+      font-weight: normal;
+      font-size: .8rem;
+    }
+
+  }
+
+}
+
+
 
 /* login form styles
 -------------------------------------------------- */
