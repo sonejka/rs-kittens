@@ -11,7 +11,6 @@
   padding: 0.2em 0;
 }
 
-
 main.container {
   padding: 80px 15px;
 }
@@ -71,7 +70,6 @@ body {
   margin: 0;
 }
 
-
 .student-list {
 
   tr {
@@ -91,6 +89,9 @@ body {
 
 }
 
+.jumbotron .avatar {
+  width: 100%;
+}
 
 /* card styles
 -------------------------------------------------- */
@@ -113,8 +114,7 @@ body {
   border: none;
 }
 
-
-/* shedule styles
+/* schedule styles
 -------------------------------------------------- */
 
 .schedule-desc {
@@ -139,7 +139,6 @@ body {
     border-left-color: red;
   }
 
-
   .card-header {
     padding: 0;
     .btn {
@@ -160,10 +159,27 @@ body {
       font-size: .8rem;
     }
   }
-
 }
 
+.schedule-desc--mentor {
+  .card-header {
+    .btn .row span:last-child {
+      text-align: left;
+    }
+  }
+}
 
+/* table-score
+-------------------------------------------------- */
+
+.table-score {
+  .form-control, .form-control:focus {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+}
 
 /* login form styles
 -------------------------------------------------- */

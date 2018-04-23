@@ -62,8 +62,13 @@
     <h3 class="text-right">Ivan Ivanov 1</h3>
     <hr>
     <div class="row">
-      <div class="col-lg-2"><img style="max-width: 150px;"
+      <div class="col-lg-2"><img class="avatar"
                                  src="https://avatars2.githubusercontent.com/u/2429680?s=460&v=4" alt="">
+
+        <a class="text-danger" href="#" class="btn btn-primary mb-5" data-toggle="modal"
+           data-target="#exampleModalCenter">
+          <small>To expel a student</small>
+        </a>
       </div>
       <div class="col-lg-10">
         <div class="row">
@@ -158,7 +163,7 @@
     <h3 class="text-right">Ivan Ivanov 2</h3>
     <hr>
     <div class="row">
-      <div class="col-lg-2"><img style="max-width: 150px;"
+      <div class="col-lg-2"><img class="avatar"
                                  src="https://avatars2.githubusercontent.com/u/2429680?s=460&v=4" alt="">
       </div>
       <div class="col-lg-10">
@@ -254,7 +259,7 @@
     <h3 class="text-right">Ivan Ivanov 3</h3>
     <hr>
     <div class="row">
-      <div class="col-lg-2"><img style="max-width: 150px;"
+      <div class="col-lg-2"><img class="avatar"
                                  src="https://avatars2.githubusercontent.com/u/2429680?s=460&v=4" alt="">
       </div>
       <div class="col-lg-10">
@@ -382,5 +387,34 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">To expel a student </h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>Do you really want to expel Ivan Ivanov?</p>
+
+        <p>Please, explain the reason</p>
+        <input type="text">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">Yes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
