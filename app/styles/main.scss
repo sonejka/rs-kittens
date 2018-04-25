@@ -93,6 +93,15 @@ body {
   width: 100%;
 }
 
+.card-body .jumbotron {
+  padding: 1rem 1rem;
+
+  .tab-pane {
+    max-width: 500px;
+    margin: 3rem auto;
+  }
+}
+
 /* card styles
 -------------------------------------------------- */
 .card-deck .card {
@@ -121,11 +130,11 @@ body {
 
   padding: 0.5rem 0 3rem;
 
-  .col-lg-2.current {
+  .col-2.current {
     position: relative;
   }
 
-  .col-lg-2.current:before {
+  .col-2.current:before {
     content: ".";
     position: absolute;
     display: block;
