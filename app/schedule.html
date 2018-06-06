@@ -16,8 +16,8 @@
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
 
+  <!-- endbuild -->
 </head>
 <body>
 <!--[if IE]>
@@ -50,6 +50,55 @@
 
 <main role="main" class="container">
   <h2>Schedule</h2>
+
+  <div class="jumbotron">
+    <h5 class="mb-5">Describe your lecture</h5>
+
+    <form action="">
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label class="field-required" for="inputEmail4">Date</label>
+          <input type="text" class="form-control" id="inputEmail4" placeholder="17-06-2018" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="field-required" for="inputPassword4">Time</label>
+          <input type="text" class="form-control" id="inputPassword4" placeholder="19:00" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label class="field-required" for="inputState">Lecture Type</label>
+          <select id="inputState" class="form-control">
+            <option selected>Self-learning</option>
+            <option>Must visit</option>
+            <option>Mentor Activity</option>
+            <option>With Deadline</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="field-required">Trainer</label>
+        <input type="text" class="form-control" placeholder="Ivan Ivanov" required>
+      </div>
+      <div class="form-group">
+        <label class="field-required">Title</label>
+        <input type="text" class="form-control" placeholder="Lecture Title" required>
+      </div>
+      <div class="form-group">
+        <label>GitHub URL to lecture materials</label>
+        <input type="text" class="form-control" placeholder="http://...">
+      </div>
+      <div class="form-group">
+        <label>URL to webinar</label>
+        <input type="text" class="form-control" placeholder="http://...">
+      </div>
+      <div class="row text-right">
+        <div class="form-group col-md-12">
+          <button type="submit" class="btn btn-success">Add Lecture</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
 
   <h3 class="text-center">1st stage</h3>
 
@@ -993,42 +1042,43 @@
     </div>
   </div>
 
-  </main>
+</main>
 
-  <div class="footer">
-    <p>&copy; 2018 RS Crew</p>
-  </div>
-  </div>
+<div class="footer">
+  <p>&copy; 2018 RS Crew</p>
+</div>
+</div>
 
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <!-- endbower -->
-  <!-- endbuild -->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap/js/dist/util.js"></script>
+<script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+<script src="/bower_components/bootstrap/js/dist/button.js"></script>
+<script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+<script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+<script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+<script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+<script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+<!-- endbuild -->
 
-  <!-- build:js scripts/plugins.js -->
-  <script src="/bower_components/bootstrap/js/dist/util.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/button.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-  <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>
