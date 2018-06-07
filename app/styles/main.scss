@@ -176,6 +176,10 @@ body {
     .badge {
       font-weight: normal;
       font-size: .8rem;
+
+      &.badge-pill {
+        line-height: 1rem;
+      }
     }
   }
 }
