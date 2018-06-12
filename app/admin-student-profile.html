@@ -34,312 +34,210 @@
 
     <ul class="nav nav-pills justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="schedule.html">Schedule</a>
+        <a class="nav-link" href="admin-schedule.html">Schedule</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="student-tasks.html">Tasks</a>
+        <a class="nav-link" href="admin-students.html">Students</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="student-profile.html">Profile</a>
+        <a class="nav-link" href="admin-mentors.html">Mentors</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="student-mentor.html">Your mentor</a>
-      </li>
+
     </ul>
   </div>
 </nav>
 
 <main role="main" class="container">
-  <h2>Student Profile</h2>
-
-  <div class="row mt-5">
-    <div class="col-3">
-      <p class="mb-5"><img class="avatar width-full rounded-2"
-                           src="https://avatars1.githubusercontent.com/u/31858127?s=460&amp;v=4" width="230"
-                           height="230" alt=""></p>
-    </div>
-
-    <div class="col-9">
-
-      <h3 class="text-center text-info mb-5">Ekaterina Volkova</h3>
-
-      <div class="row text-center">
-        <div class="col-sm">
-          <h2>22
-            <small>/343</small>
-          </h2>
-          <p>Rating</p>
-        </div>
-        <div class="col-sm">
-          <h2>B1</h2>
-          <p>English Level</p>
-        </div>
-        <div class="col-sm">
-          <h2>Minsk</h2>
-          <p>City</p>
-        </div>
-        <div class="col-sm">
-          <h2>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </h2>
-          <p><a href="#">KatieVo</a></p>
-        </div>
-      </div>
-
-    </div>
+  <h2>Student Profile </h2>
+  <div class="text-right btn-container">
+    <button class="btn btn-success btn-sm" onclick="print();"><i class="fas fa-print"></i> Print</button>
   </div>
-  <p>Mentor: <a href="#">Hleb Shautsou</a></p>
-  <hr>
-
-  <h4>Education:</h4>
-
-  <div class="row">
-    <div class="col-3 text-right">University:</div>
-    <div class="col-6">Belarusian State University of Informatics And Radioelectronics</div>
-  </div>
-
-  <div class="row">
-    <div class="col-3 text-right">Faculty:</div>
-    <div class="col-6">Faculty of Civil Engineering</div>
-  </div>
-
-  <div class="row">
-    <div class="col-3 text-right">Graduation year:</div>
-    <div class="col-6">2015</div>
-  </div>
-
-  <div class="row">
-    <div class="col-3 text-right">Вам нужна учебная практика в EPAM?</div>
-    <div class="col-6">Нет</div>
-  </div>
-
-  <div class="row">
-    <div class="col-3 text-right">Вам нужно распределение в EPAM после обучения в ВУЗе?</div>
-    <div class="col-6">Да</div>
-  </div>
-  <hr>
-
-
-  <div class="row">
-    <div class="col-6">Name in Russian:</div>
-    <div class="col-6">Екатерина Волкова</div>
-  </div>
-
-  <h4>Contact Information:</h4>
-
-  <div class="row">
-    <div class="col-6">Phone:</div>
-    <div class="col-6">8-345-343-22-78</div>
-  </div>
-
-  <div class="row">
-    <div class="col-6">Email:</div>
-    <div class="col-6">Ekaterina.Volkova@gmail.com</div>
-  </div>
-
-
-
-  <form>
-
-    <hr class="mb-5 mt-5">
-
+  <div class="jumbotron student-cv mt-2">
     <div class="row">
-      <div class="form-group col-md-6">
-        <label class="field-required" for="inputFirstNameDoc">First Name (as it appears on your passport)</label>
-        <input type="text" class="form-control" id="inputFirstNameDoc"
-               placeholder="First Name" required>
+      <div class="col-md-3">
+
+        <p class="mb-5"><img class="avatar width-full rounded-2"
+                             src="https://avatars1.githubusercontent.com/u/31858127?s=460&amp;v=4" alt=""
+                             style="width: 100%;"></p>
+
       </div>
-      <div class="form-group col-md-6">
-        <label class="field-required" for="inputLastNameDoc">Last Name (as it appears on your passport)</label>
-        <input type="text" class="form-control" id="inputLastNameDoc"
-               placeholder="Last Name" required>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label class="field-required" for="inputFirstNameRu">First Name (in Russian)</label>
-        <input type="text" class="form-control" id="inputFirstNameRu" placeholder="First Name" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label class="field-required" s for="inputLastNameRu">Last Name (in Russian)</label>
-        <input type="text" class="form-control" id="inputLastNameRu" placeholder="Last Name" required>
-      </div>
-    </div>
-
-    <hr class="mb-5 mt-5">
-
-    <div class="row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">City</label>
-        <select id="inputCity" class="form-control" required>
-          <option>Minsk</option>
-          <option>Gomel</option>
-          <option>Grodno</option>
-          <option>Mogilev</option>
-          <option>Brest</option>
-          <option>Bryansk</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group col-md-6">
-
-        <label class="field-required" for="inputPhone">Phone (in the form 8-XXX-XXX-XX-XX)</label>
-
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">8-</span>
+      <div class="col-md-9">
+        <h2 class="text-info">Ekaterina Volkova</h2>
+        <p>RU: Екатерина Волкова</p>
+        <p>Mentor: <a href="#">Hleb Shautsou</a></p>
+        <hr>
+        <div class="row text-center mt-5">
+          <div class="col-sm">
+            <h3>22
+              <small>/343</small>
+            </h3>
+            <p>Rating</p>
           </div>
-          <input required type="tel" pattern="(\+?\d[- .]*){9,13}" class="form-control" id="inputPhone"
-                 placeholder="111-111-11-11" aria-label="Username" aria-describedby="basic-addon1">
+          <div class="col-sm">
+            <h3>B1</h3>
+            <p>English Level</p>
+          </div>
+          <div class="col-sm">
+            <h3>Minsk</h3>
+            <p>City</p>
+          </div>
+          <div class="col-sm">
+            <h3>
+              <a href="#"><i class="fab fa-github"></i></a>
+            </h3>
+            <p><a href="#">KatieVo</a></p>
+          </div>
         </div>
 
-      </div>
-    </div>
+        <hr>
 
-    <div class="row">
-      <div class="form-group col-md-12">
-        <label class="field-required" for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-      </div>
-    </div>
-    <hr class="mb-5 mt-5">
-    <div class="row">
-      <div class="form-group col-md-12">
-        <label for="university">Select Your University</label>
-        <select id="university" class="form-control">
-          <option value="BSUIR">Belarusian State University of Informatics And Radioelectronics</option>
-          <option value="BSU">Belarusian State University</option>
-          <option value="BNTU">Belarusian National Technical University</option>
-          <option value="BSEU">Belarus State Economic University</option>
-          <option value="BSATU">Belarusian State Agrarian Technical University</option>
-          <option value="MREC">Minsk Radio Engineering College</option>
-          <option value="MSLU">Minsk State Linguistic University</option>
-          <option value="BSPC">Brest State Polytechnical College</option>
-          <option value="BryanskSTU">Bryansk State Technical University</option>
-          <option value="BrSTU">Brest State Polytechnical College</option>
-          <option value="ICKS">Institute of Contemporary Knowledge Shirokova</option>
-          <option value="VSU">Vitebsk State University</option>
-          <option value="Other">Other University</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-9">
-        <label for="facultyTitle">Select Your Faculty</label>
-        <select id="facultyTitle" class="form-control">
-          <option value="Faculty of Civil Engineering">Faculty of Civil Engineering</option>
-          <option value="Electronic Information Systems">Electronic Information Systems</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
-      <div class="form-group col-md-3">
-        <label for="graduationYear">Select Your Graduation year</label>
-        <select id="graduationYear" class="form-control">
-          <option value="Earlier">Earlier</option>
-          <option value="2004">2004</option>
-          <option value="2005">2005</option>
-          <option value="2006">2006</option>
-          <option value="2007">2007</option>
-          <option value="2008">2008</option>
-          <option value="2009">2009</option>
-          <option value="2010">2010</option>
-          <option value="2011">2011</option>
-          <option value="2012">2012</option>
-          <option value="2013">2013</option>
-          <option value="2014">2014</option>
-          <option value="2015">2015</option>
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-          <option value="2020">2020</option>
-          <option value="2021">2021</option>
-          <option value="2022">2022</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-12">
-        <label for="faculty">Select Your English Level</label>
-        <select id="faculty" class="form-control">
-          <option value="A1 (Beginner)">A1 (Beginner)</option>
-          <option value="A2 (Elementary English)">A2 (Elementary English)</option>
-          <option value="B1 (Intermediate English)">B1 (Intermediate English)</option>
-          <option value="B2 (Upper-Intermediate English)">B2 (Upper-Intermediate English)</option>
-          <option value="C1 (Advanced English)">C1 (Advanced English)</option>
-          <option value="C2 (Proficiency English)">C2 (Proficiency English)</option>
-        </select>
-      </div>
-    </div>
+        <h4 class="badge badge-info">Contact Information</h4>
 
-    <div class="row">
-      <div class="form-group col-md-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="epamCheck">
-          <label class="form-check-label" for="epamCheck">
-            Вам нужна учебная практика в EPAM?
-          </label>
+        <div class="row">
+          <div class="col-md-4">Phone:</div>
+          <div class="col-md-8">8-345-343-22-78</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Email:</div>
+          <div class="col-md-8">Ekaterina.Volkova@gmail.com</div>
+        </div>
+
+        <hr>
+
+        <h4 class="badge badge-info">Education</h4>
+
+        <div class="row">
+          <div class="col-md-4">University:</div>
+          <div class="col-md-8">Belarusian State University of Informatics And Radioelectronics</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Faculty:</div>
+          <div class="col-md-8">Faculty of Civil Engineering</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Graduation year:</div>
+          <div class="col-md-8">2015</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Вам нужна учебная практика в EPAM?</div>
+          <div class="col-md-8">Нет</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Вам нужно распределение в EPAM после обучения в ВУЗе?</div>
+          <div class="col-md-8">Да</div>
+        </div>
+
+        <hr>
+
+        <h4 class="badge badge-info">Employment History</h4>
+        <div class="row">
+          <div class="col-md-4">Employment History</div>
+          <div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+            lorem
+            eu nulla luctus ullamcorper. Mauris id efficitur velit. Nullam efficitur hendrerit lorem sit amet
+            ullamcorper.
+            Vivamus sit amet velit ut ligula venenatis tincidunt ut non risus. Nulla a feugiat augue. Pellentesque
+            ullamcorper, lorem egestas tristique volutpat, tortor est laoreet sapien, id tristique risus quam non ex.
+          </p></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">Is EPAM employee?</div>
+          <div class="col-md-8">Yes</div>
+        </div>
+
+        <hr>
+
+        <h4 class="badge badge-info">Additional Information</h4>
+
+        <div class="row">
+          <div class="col-md-4">Notes</div>
+          <div class="col-md-8"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+            lorem
+            eu nulla luctus ullamcorper. </p></div>
+        </div>
+
+
+        <hr>
+
+        <h4 class="badge badge-info">Task Progress</h4>
+
+        <div class="row">
+          <div class="col-md-4">stage #1 score</div>
+          <div class="col-md-8">90</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">markup-1</div>
+          <div class="col-md-8">75</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">JSTest</div>
+          <div class="col-md-8">57</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">Тема презентации</div>
+          <div class="col-md-8">Scrum</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">code-jam1</div>
+          <div class="col-md-8">75</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">code-jam2-dom</div>
+          <div class="col-md-8">57</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Codewars</div>
+          <div class="col-md-8">75</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">match-match-game</div>
+          <div class="col-md-8">57</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">CSS Recipes & Layouts</div>
+          <div class="col-md-8">90</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">JSCore Interview</div>
+          <div class="col-md-8">75</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">Presentation</div>
+          <div class="col-md-8">57</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">CSS QD</div>
+          <div class="col-md-8">57</div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">WSChallenge</div>
+          <div class="col-8">57</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">code-jam4</div>
+          <div class="col-md-8">57</div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="form-group col-md-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="epamCheck">
-          <label class="form-check-label" for="epamCheck">
-            Вам нужно распределение в EPAM после обучения в ВУЗе?
-          </label>
-        </div>
-      </div>
-    </div>
-
-
-    <hr class="mb-5 mt-5">
-
-    <div class="row">
-      <div class="form-group col-md-12">
-        <label for="employmentHistory">Employment History</label>
-        <textarea class="form-control" id="employmentHistory" rows="3"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="epamCheck">
-          <label class="form-check-label" for="epamCheck">
-            Is EPAM employee?
-          </label>
-        </div>
-      </div>
-    </div>
-    <hr class="mb-5 mt-5">
-
-    <div class="row">
-      <div class="form-group col-md-12">
-        <label for="notesText">Notes</label>
-        <textarea class="form-control" id="notesText" rows="3"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="form-group col-md-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="subscribeCheck">
-          <label class="form-check-label" for="subscribeCheck">
-            Subscribe to email notifications?
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <div class="row text-center">
-      <div class="form-group col-md-12">
-        <button type="submit" class="btn btn-primary mb-5">Save Information</button>
-      </div>
-    </div>
-  </form>
 
 </main>
 
