@@ -3,6 +3,7 @@
 @import "lux";
 // enbower
 
+
 // Media queries breakpoints
 $screen-desktop: 1024px;
 $screen-tablet: 767px;
@@ -184,11 +185,28 @@ body {
 -------------------------------------------------- */
 
 .table-score {
-  .form-control, .form-control:focus {
-    background: transparent;
-    border: 0;
-    box-shadow: none;
+  a {
+    color: #0278b8;
   }
+
+  @media (max-width: $screen-tablet) {
+    th:nth-child(3), td:nth-child(3) {
+      display: none;
+    }
+
+    td, th {
+      font-size: .9rem;
+    }
+  }
+
+  @media (max-width: $screen-phone) {
+    th:nth-child(3), td:nth-child(3), th:nth-child(5), td:nth-child(5) {
+      display: none;
+    }
+    td, th {
+      font-size: .6rem;
+    }
+    }
 
 }
 

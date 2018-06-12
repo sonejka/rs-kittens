@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>rs kittens</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- build:css styles/vendor.css -->
+
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- endbuild -->
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+</head>
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo-rsschool.svg" alt="RS Logo"></a>
+    <p class="logged-user">Hello, Ivan! <a href="#">Sign out</a></p>
+
+    <ul class="nav nav-pills justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="admin-schedule.html">Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="admin-students.html">Students</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="admin-mentors.html">Mentors</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+  <h2>Students</h2>
+
+  <div class="row text-right">
+    <div class="form-group col-md-12">
+      <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#sessionAddingForm"><i
+        class="fas fa-download"></i> Excel Detailed Report
+      </button>
+    </div>
+  </div>
+
+
+  <table class="table table-hover table-sm table-score">
+    <thead>
+    <tr>
+      <th scope="col">Rating</th>
+      <th scope="col">Name</th>
+      <th>GitHub</th>
+      <th scope="col">City</th>
+      <th scope="col">Mentor</th>
+      <th scope="col">English Level</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">Insanemnsk</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">AglayaSV</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">pavelgrinevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">Nadya-Ponka</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">AndrewMik</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">PhilipokTheCat</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">Insanemnsk</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">AglayaSV</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+
+    </tr>
+    <tr>
+      <td>17</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">pavelgrinevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">Nadya-Ponka</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>19</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">AndrewMik</a></td>
+      <td>Brest</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>20</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">PhilipokTheCat</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>21</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">Insanemnsk</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">AglayaSV</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>23</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>24</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>25</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>26</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+
+    </tr>
+    <tr>
+      <td>27</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">pavelgrinevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>28</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">Nadya-Ponka</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>29</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">AndrewMik</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>30</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">PhilipokTheCat</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>31</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">Insanemnsk</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>32</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">AglayaSV</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>33</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>34</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>35</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>36</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+
+    </tr>
+    <tr>
+      <td>37</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">pavelgrinevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>38</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">Nadya-Ponka</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>39</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">AndrewMik</a></td>
+      <td>Brest</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>40</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">PhilipokTheCat</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>41</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">Insanemnsk</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>42</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">AglayaSV</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>43</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>44</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>45</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">anton-yatskevich</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>46</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">KatieVo</a></td>
+      <td>Mogilev</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+
+    </tr>
+    <tr>
+      <td>47</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">pavelgrinevich</a></td>
+      <td>Brest</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    <tr>
+      <td>48</td>
+      <td><a href="#">Nadzeya Ponkratova</a></td>
+      <td><a href="https://github.com/KatieVo">Nadya-Ponka</a></td>
+      <td>Minsk</td>
+      <td><a href="#">Pavel Kuzniatsou</a></td>
+      <td>B1</td>
+    </tr>
+
+    <tr>
+      <td>49</td>
+      <td><a href="#">Siarhei Lisiunin</a></td>
+      <td><a href="https://github.com/KatieVo">AndrewMik</a></td>
+      <td>Brest</td>
+      <td><a href="#">Yahor Simak</a></td>
+      <td>A2</td>
+    </tr>
+
+    <tr>
+      <td>50</td>
+      <td><a href="#">Ekaterina Volkova</a></td>
+      <td><a href="https://github.com/KatieVo">PhilipokTheCat</a></td>
+      <td>Grodno</td>
+      <td><a href="#">Hleb Shautsou</a></td>
+      <td>B2</td>
+    </tr>
+
+    </tbody>
+  </table>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li> <span class="sr-only">(current)</span>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">2 </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+</main>
+
+<div class="footer">
+  <p>&copy; 2018 RS Crew</p>
+</div>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap/js/dist/util.js"></script>
+<script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+<script src="/bower_components/bootstrap/js/dist/button.js"></script>
+<script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+<script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+<script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+<script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+<script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+<script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
