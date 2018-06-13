@@ -22,7 +22,6 @@
 
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-
 </head>
 <body>
 <!--[if IE]>
@@ -57,33 +56,40 @@
 
   <div class="row text-right">
     <div class="form-group col-md-12">
-      <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#sessionAddingForm"><i class="fas fa-plus"></i> Add Session</button>
-      <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#taskAddingForm"><i class="fas fa-plus"></i> Add Task</button>
+      <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#sessionAddingForm"><i
+        class="fas fa-plus"></i> Add Session
+      </button>
+      <button type="submit" class="btn btn-success" data-toggle="collapse" data-target="#taskAddingForm"><i
+        class="fas fa-plus"></i> Add Task
+      </button>
     </div>
   </div>
 
   <div class="jumbotron collapse" id="sessionAddingForm" aria-expanded="true">
-    <h5 class="mb-5">Describe your session</h5>
+    <h5 class="mb-5">New Session</h5>
 
     <form action="">
       <div class="form-group">
         <label class="field-required">Title</label>
-        <input type="text" class="form-control" placeholder="Session Title" required>
+        <input type="text" class="form-control is-invalid" placeholder="Session Title" required>
+        <div class="invalid-feedback">Please fill in this field</div>
       </div>
 
       <div class="form-group">
         <label class="field-required" for="inputState">Session Type</label>
-        <select id="inputState" class="form-control">
-          <option selected>Online</option>
+        <select id="inputState" class="form-control is-invalid" required>
+          <option></option>
+          <option>Online</option>
           <option>Offline</option>
           <option>Self-learning</option>
           <option>Extra Event</option>
         </select>
+        <div class="invalid-feedback">Please fill in this field</div>
       </div>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label class="field-required" for="inputEmail4">Date</label>
-          <input type="text" class="form-control" id="inputEmail4" placeholder="17-06-2018" required>
+          <input type="text" class="form-control" placeholder="17-06-2018" required id="datepicker">
         </div>
         <div class="form-group col-md-6">
           <label class="field-required" for="inputPassword4">Time</label>
@@ -92,8 +98,9 @@
       </div>
       <div class="form-group">
         <label class="field-required">Location</label>
-        <input type="text" class="form-control"
+        <input type="text" class="form-control is-valid"
                placeholder="like: 'Str. Akadеmіka Kup...' or 'https://attendee.gototraining.com...'">
+        <div class="valid-feedback">Success! You've done it.</div>
       </div>
       <div class="form-group">
         <label class="field-required">Trainer</label>
@@ -106,6 +113,7 @@
 
       <div class="row text-right">
         <div class="form-group col-md-12">
+          <button type="submit" class="btn btn-secondary">Cancel</button>
           <button type="submit" class="btn btn-success">Save</button>
         </div>
       </div>
@@ -189,7 +197,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-globe"></i> Online</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-globe"></i> Online</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Fri</span>
             <span class="col-1">20:00</span>
@@ -216,7 +225,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-map-marker"></i> Offline</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-map-marker"></i> Offline</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Wed</span>
             <span class="col-1">20:00</span>
@@ -344,7 +354,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i class="fab fa-hotjar"></i> Code Jam</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-warning"><i
+              class="fab fa-hotjar"></i> Code Jam</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Wed</span>
             <span class="col-1">20:00</span>
@@ -485,7 +496,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-globe"></i> Online</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-globe"></i> Online</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Fri</span>
             <span class="col-1">20:00</span>
@@ -512,7 +524,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-map-marker"></i> Offline</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-map-marker"></i> Offline</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Mon</span>
             <span class="col-1">20:00</span>
@@ -640,7 +653,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i class="fab fa-hotjar"></i> Code Jam</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-warning"><i
+              class="fab fa-hotjar"></i> Code Jam</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Mon</span>
             <span class="col-1">20:00</span>
@@ -781,7 +795,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-globe"></i> Online</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-globe"></i> Online</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Mon</span>
             <span class="col-1">20:00</span>
@@ -808,7 +823,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-map-marker"></i> Offline</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-info"><i
+              class="fas fa-map-marker"></i> Offline</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Mon</span>
             <span class="col-1">20:00</span>
@@ -936,7 +952,8 @@
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
                   aria-controls="collapseOne">
           <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i class="fab fa-hotjar"></i> Code Jam</span></span>
+            <span class="col-2"><span class="badge badge-pill badge-warning"><i
+              class="fab fa-hotjar"></i> Code Jam</span></span>
             <span class="col-2">March 19, 2018</span>
             <span class="col-1">Mon</span>
             <span class="col-1">20:00</span>
@@ -1080,6 +1097,7 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -1105,6 +1123,7 @@
 
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>
