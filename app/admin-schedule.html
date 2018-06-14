@@ -107,8 +107,17 @@
         <input type="text" class="form-control" placeholder="Ivan Ivanov" required>
       </div>
       <div class="form-group">
-        <label>URL to Gist/GitHub Markdown File </label>
+        <label>URL to GitHub Markdown File </label>
+
         <input type="text" class="form-control" placeholder="http://...">
+
+        <small class="form-text text-muted">Please create markdown file with session description in the following
+          directory
+          <a
+            href="https://github.com/rolling-scopes-school/lectures">https://github.com/rolling-scopes-school/lectures</a>
+          and provide URL link to that file.
+        </small>
+
       </div>
 
       <div class="row text-right">
@@ -122,7 +131,7 @@
 
 
   <div class="jumbotron collapse" id="taskAddingForm">
-    <h5 class="mb-5">Describe your task</h5>
+    <h5 class="mb-5">New Task</h5>
 
     <form action="">
       <div class="form-group">
@@ -132,8 +141,9 @@
 
       <div class="form-group">
         <label class="field-required" for="inputState">Task Type</label>
-        <select id="inputState" class="form-control">
-          <option selected>Task</option>
+        <select id="inputState" class="form-control" required>
+          <option></option>
+          <option>Task</option>
           <option>Code Jam</option>
           <option>Interview</option>
           <option>Test</option>
@@ -162,8 +172,9 @@
       </div>
       <div class="form-group">
         <label class="field-required">Who checks</label>
-        <select class="form-control">
-          <option selected>Mentor</option>
+        <select class="form-control" required>
+          <option></option>
+          <option>Mentor</option>
           <option>Random Mentor</option>
           <option>Trainer</option>
           <option>Unit Test</option>
@@ -175,12 +186,19 @@
         </select>
       </div>
       <div class="form-group">
-        <label>URL to Gist/GitHub Markdown File</label>
-        <input type="text" class="form-control" placeholder="http://...">
+        <label class="field-required">URL to Gist/GitHub Markdown File</label>
+        <input type="text" class="form-control" placeholder="http://..." required>
+        <small class="form-text text-muted">Please create markdown file with task description in the following
+          directory
+          <a
+            href="https://github.com/rolling-scopes-school/tasks">https://github.com/rolling-scopes-school/tasks</a>
+          and provide URL link to that file.
+        </small>
       </div>
 
       <div class="row text-right">
         <div class="form-group col-md-12">
+          <button type="submit" class="btn btn-secondary">Cancel</button>
           <button type="submit" class="btn btn-success">Save</button>
         </div>
       </div>
@@ -1097,7 +1115,6 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/moment/moment.js"></script>
-
 <!-- endbower -->
 <!-- endbuild -->
 
