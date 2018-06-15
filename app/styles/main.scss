@@ -142,7 +142,8 @@ body {
 
   .card-header {
     padding: 0;
-    .btn {
+    .btn.btn-link {
+      position: relative;
       display: block;
       width: 100%;
       text-align: left;
@@ -179,6 +180,7 @@ body {
     }
   }
 }
+
 
 /* table-score
 -------------------------------------------------- */
