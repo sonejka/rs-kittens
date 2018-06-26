@@ -52,24 +52,30 @@
 
 <main role="main" class="container">
 
-  <h2>Schedule</h2>
+  <h2>Schedule </h2>
 
-
-  <div class="row text-right">
+  <div class="row text-right mb-4 mt-3">
     <div class="form-group col-md-12">
-      <button type="submit" class="btn btn-success" data-toggle="modal"
+
+      <button type="submit" class="btn btn-success mb-1" data-toggle="modal"
               data-target="#modalAddSession"><i
         class="fas fa-plus"></i> Add Session
       </button>
-      <button type="submit" class="btn btn-success" data-toggle="modal"
+      <button type="submit" class="btn btn-success mb-1" data-toggle="modal"
               data-target="#modalAddTask"><i
         class="fas fa-plus"></i> Add Task
       </button>
     </div>
   </div>
 
-  <h3 class="text-center">Stage #1</h3>
-
+  <h3 class="text-center"><span class="badge badge-primary">Stage #1</span> <span class="badge badge-secondary-gray">16.01.2018 - 16.03.2018</span>
+    <button title="Edit" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalEditStage"><i class="fas fa-pencil-alt"></i> Edit
+    </button>
+    <button title="Delete" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalDeleteStageError"><i class="fas fa-trash-alt"></i> Delete
+    </button>
+  </h3>
   <div class="schedule-desc" id="accordion1">
     <div class="card past">
       <div class="card-header" id="headingTwo">
@@ -103,6 +109,9 @@
             </button>
           </div>
           <h4>Session Title</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Location: <a href="#">https://attendee.gotowebinar.com/register/6680493401198466819</a>
+          </p>
+
           <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
             officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3
             wolf
@@ -226,9 +235,7 @@
           <article class="markdown-body entry-content" itemprop="text">
 
 
-            <p><a href="#" class="btn btn-info ">Link to webinar</a></p>
-
-            <h3><a  class="anchor" aria-hidden="true" href="#web-typography">
+            <h3><a class="anchor" aria-hidden="true" href="#web-typography">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -243,7 +250,7 @@
               <li>Kerning</li>
               <li>OpenType font features and font-feature-settings property</li>
             </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#video">
+            <h3><a class="anchor" aria-hidden="true" href="#video">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -254,7 +261,7 @@
             <ul>
               <li><a href="https://youtu.be/rs011J8cT-4" rel="nofollow">https://youtu.be/rs011J8cT-4</a></li>
             </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#links">
+            <h3><a class="anchor" aria-hidden="true" href="#links">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -429,7 +436,14 @@
     </div>
   </div>
 
-  <h3 class="text-center">Stage #2</h3>
+  <h3 class="text-center"><span class="badge badge-primary">Stage #2</span> <span class="badge badge-secondary-gray">16.03.2018 - 16.06.2018</span>
+    <button title="Edit" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalEditStage"><i class="fas fa-pencil-alt"></i> Edit
+    </button>
+    <button title="Delete" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalDeleteStageError"><i class="fas fa-trash-alt"></i> Delete
+    </button>
+  </h3>
 
   <div class="schedule-desc" id="accordion2">
     <div class="card">
@@ -538,7 +552,7 @@
 
             <a href="#" class="btn btn-info float-right">Link to webinar</a>
 
-            <h3><a  class="anchor" aria-hidden="true" href="#web-typography">
+            <h3><a class="anchor" aria-hidden="true" href="#web-typography">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -553,7 +567,7 @@
               <li>Kerning</li>
               <li>OpenType font features and font-feature-settings property</li>
             </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#video">
+            <h3><a class="anchor" aria-hidden="true" href="#video">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -564,7 +578,7 @@
             <ul>
               <li><a href="https://youtu.be/rs011J8cT-4" rel="nofollow">https://youtu.be/rs011J8cT-4</a></li>
             </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#links">
+            <h3><a class="anchor" aria-hidden="true" href="#links">
               <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
                    aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -728,302 +742,21 @@
     </div>
   </div>
 
-  <h3 class="text-center">Stage #3</h3>
+  <h3 class="text-center"><span class="badge badge-primary">Stage #3</span> <span class="badge badge-secondary-gray">16.06.2018 - 16.08.2018</span>
+    <button title="Edit" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalEditStage"><i class="fas fa-pencil-alt"></i> Edit
+    </button>
+    <button title="Delete" class="btn btn-secondary btn-sm" data-toggle="modal"
+            data-target="#modalDeleteStage"><i class="fas fa-trash-alt"></i> Delete
+    </button>
+  </h3>
 
-  <div class="schedule-desc" id="accordion3">
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i
-              class="fas fa-globe"></i> Online</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Mon</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i
-              class="fas fa-map-marker"></i> Offline</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Mon</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
-                  aria-controls="collapseFour">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-book-open"></i> Self-learning</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Wed</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-info"><i class="fas fa-gift"></i> Extra Event</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Fri</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-        </button>
-      </div>
-
-      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-body">
-          <article class="markdown-body entry-content" itemprop="text">
-
-
-            <a href="#" class="btn btn-info float-right">Link to webinar</a>
-
-            <h3><a  class="anchor" aria-hidden="true" href="#web-typography">
-              <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
-                   aria-hidden="true">
-                <path fill-rule="evenodd"
-                      d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-              </svg>
-            </a>Web Typography:
-            </h3>
-            <ul>
-              <li>Typography principles</li>
-              <li>Using quotes</li>
-              <li>Hyphenation and dash/hyphen types</li>
-              <li>Kerning</li>
-              <li>OpenType font features and font-feature-settings property</li>
-            </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#video">
-              <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
-                   aria-hidden="true">
-                <path fill-rule="evenodd"
-                      d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-              </svg>
-            </a>Video:
-            </h3>
-            <ul>
-              <li><a href="https://youtu.be/rs011J8cT-4" rel="nofollow">https://youtu.be/rs011J8cT-4</a></li>
-            </ul>
-            <h3><a  class="anchor" aria-hidden="true" href="#links">
-              <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16"
-                   aria-hidden="true">
-                <path fill-rule="evenodd"
-                      d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-              </svg>
-            </a>Links:
-            </h3>
-            <ul>
-              <li><a href="http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326"
-                     rel="nofollow">http://www.amazon.com/Elements-Typographic-Style-Robert-Bringhurst/dp/0881791326</a>
-              </li>
-              <li><a href="http://webtypography.net/intro/" rel="nofollow">http://webtypography.net/intro/</a></li>
-              <li>Про вертикальный ритм: <a href="http://typecast.com/blog/4-simple-steps-to-vertical-rhythm"
-                                            rel="nofollow">http://typecast.com/blog/4-simple-steps-to-vertical-rhythm</a>
-              </li>
-              <li>Responsive Web Typography: <a
-                href="http://www.slideshare.net/clarissapeterson/responsive-typography-27460071" rel="nofollow">http://www.slideshare.net/clarissapeterson/responsive-typography-27460071</a>
-              </li>
-              <li>Игра с кернингом <a href="http://type.method.ac/" rel="nofollow">http://type.method.ac/</a></li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i
-              class="fab fa-hotjar"></i> Code Jam</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Mon</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i class="fas fa-list-ol"></i> Test</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Mon</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
-                  aria-controls="collapseFour">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"> <i class="fas fa-microphone-alt"></i> Interview</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Fri</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header" id="headingTwo">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-warning"><i class="fas fa-hourglass-start"></i> Start Task</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Mon</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header" id="headingThree">
-        <h5 class="mb-0">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
-                  aria-controls="collapseOne">
-          <span class="row">
-            <span class="col-2"><span class="badge badge-pill badge-danger"><i class="fas fa-hourglass-end"></i> End Task</span></span>
-            <span class="col-2">March 19, 2018</span>
-            <span class="col-1">Wed</span>
-            <span class="col-1">20:00</span>
-            <span class="col-4">Web Typography</span>
-            <span class="col-2">Саша Герасимов</span>
-          </span>
-          </button>
-        </h5>
-      </div>
-      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-        <div class="card-body">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-          officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-          moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-          butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-          haven't heard of them accusamus labore sustainable VHS.
-        </div>
-      </div>
+  <div class="row text-center mt-5">
+    <div class="form-group col-md-12">
+      <button type="submit" class="btn btn-outline-secondary" data-toggle="modal"
+              data-target="#modalAddStage"><i
+        class="fas fa-plus"></i> Add Stage
+      </button>
     </div>
   </div>
 
@@ -1114,8 +847,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Task Type</label>
-            <select  class="form-control" required>
+            <label class="field-required">Task Type</label>
+            <select class="form-control" required>
               <option></option>
               <option selected>Task</option>
               <option>Code Jam</option>
@@ -1125,25 +858,25 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Date</label>
-              <input type="text" class="form-control"  placeholder="17-06-2018" value="17-06-2018"
+              <label class="field-required">Start Date</label>
+              <input type="text" class="form-control" placeholder="17-06-2018" value="17-06-2018"
                      required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">Start Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >End Date</label>
-              <input type="text" class="form-control"  placeholder="27-06-2018" value="27-06-2018"
+              <label class="field-required">End Date</label>
+              <input type="text" class="form-control" placeholder="27-06-2018" value="27-06-2018"
                      required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >End Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">End Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1211,8 +944,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Task Type</label>
-            <select  class="form-control" required>
+            <label class="field-required">Task Type</label>
+            <select class="form-control" required>
               <option></option>
               <option>Task</option>
               <option>Code Jam</option>
@@ -1222,23 +955,23 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Date</label>
-              <input type="text" class="form-control"  placeholder="17-06-2018" required>
+              <label class="field-required">Start Date</label>
+              <input type="text" class="form-control" placeholder="17-06-2018" required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" required>
+              <label class="field-required">Start Time</label>
+              <input type="text" class="form-control" placeholder="19:00" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >End Date</label>
-              <input type="text" class="form-control"  placeholder="17-06-2018" required>
+              <label class="field-required">End Date</label>
+              <input type="text" class="form-control" placeholder="17-06-2018" required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >End Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" required>
+              <label class="field-required">End Time</label>
+              <input type="text" class="form-control" placeholder="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1302,8 +1035,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Session Type</label>
-            <select  class="form-control is-invalid" required>
+            <label class="field-required">Session Type</label>
+            <select class="form-control is-invalid" required>
               <option></option>
               <option>Online</option>
               <option>Offline</option>
@@ -1314,12 +1047,12 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Date</label>
-              <input type="text" class="form-control" placeholder="17-06-2018" required >
+              <label class="field-required">Date</label>
+              <input type="text" class="form-control" placeholder="17-06-2018" required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" required>
+              <label class="field-required">Time</label>
+              <input type="text" class="form-control" placeholder="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1382,8 +1115,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Session Type</label>
-            <select  class="form-control is-invalid" required>
+            <label class="field-required">Session Type</label>
+            <select class="form-control is-invalid" required>
               <option></option>
               <option selected>Online</option>
               <option>Offline</option>
@@ -1394,13 +1127,13 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Date</label>
+              <label class="field-required">Date</label>
               <input type="text" class="form-control" placeholder="17-06-2018" value="17-06-2018" required
-                     >
+              >
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1417,7 +1150,8 @@
           <div class="form-group">
             <label>URL to GitHub Markdown File with session description</label>
 
-            <input type="text" class="form-control" placeholder="http://..." value="https://github.com/rolling-scopes-school/lectures/blob/master/lectures/position-floats-semantics-css3.md">
+            <input type="text" class="form-control" placeholder="http://..."
+                   value="https://github.com/rolling-scopes-school/lectures/blob/master/lectures/position-floats-semantics-css3.md">
 
             <small class="form-text text-muted">Please create markdown file with session description in the following
               directory
@@ -1463,8 +1197,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Task Type</label>
-            <select  class="form-control" required>
+            <label class="field-required">Task Type</label>
+            <select class="form-control" required>
               <option></option>
               <option selected>Task</option>
               <option>Code Jam</option>
@@ -1474,25 +1208,25 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Date</label>
-              <input type="text" class="form-control"  placeholder="17-06-2018" value="17-06-2018"
+              <label class="field-required">Start Date</label>
+              <input type="text" class="form-control" placeholder="17-06-2018" value="17-06-2018"
                      required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Start Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">Start Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >End Date</label>
-              <input type="text" class="form-control"  placeholder="27-06-2018" value="27-06-2018"
+              <label class="field-required">End Date</label>
+              <input type="text" class="form-control" placeholder="27-06-2018" value="27-06-2018"
                      required>
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >End Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">End Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1560,8 +1294,8 @@
           </div>
 
           <div class="form-group">
-            <label class="field-required" >Session Type</label>
-            <select  class="form-control is-invalid" required>
+            <label class="field-required">Session Type</label>
+            <select class="form-control is-invalid" required>
               <option></option>
               <option selected>Online</option>
               <option>Offline</option>
@@ -1572,13 +1306,13 @@
           </div>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label class="field-required" >Date</label>
+              <label class="field-required">Date</label>
               <input type="text" class="form-control" placeholder="17-06-2018" value="17-06-2018" required
-                     >
+              >
             </div>
             <div class="form-group col-md-6">
-              <label class="field-required" >Time</label>
-              <input type="text" class="form-control"  placeholder="19:00" value="19:00" required>
+              <label class="field-required">Time</label>
+              <input type="text" class="form-control" placeholder="19:00" value="19:00" required>
             </div>
           </div>
           <div class="form-group">
@@ -1595,7 +1329,8 @@
           <div class="form-group">
             <label>URL to GitHub Markdown File with session description</label>
 
-            <input type="text" class="form-control" placeholder="http://..." value="https://github.com/rolling-scopes-school/lectures/blob/master/lectures/position-floats-semantics-css3.md">
+            <input type="text" class="form-control" placeholder="http://..."
+                   value="https://github.com/rolling-scopes-school/lectures/blob/master/lectures/position-floats-semantics-css3.md">
 
             <small class="form-text text-muted">Please create markdown file with session description in the following
               directory
@@ -1618,6 +1353,156 @@
     </div>
   </div>
 </div>
+
+
+<!-- Modal "Add Stage" -->
+<div class="modal fade" id="modalAddStage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <form action="">
+
+        <div class="modal-header">
+          <h5 class="modal-title">New Stage</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="field-required">Title</label>
+            <input type="text" class="form-control is-invalid" placeholder="Stage #1" required>
+            <div class="invalid-feedback">Please fill in this field</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label class="field-required">Start Date</label>
+              <input type="text" class="form-control" placeholder="17-01-2018" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="field-required">End Date</label>
+              <input type="text" class="form-control is-valid" placeholder="17-04-2018" required>
+              <div class="valid-feedback">Success! You've done it.</div>
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <div class="row text-right">
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal "Edit Stage" -->
+<div class="modal fade" id="modalEditStage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <form action="">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Stage</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="field-required">Title</label>
+            <input type="text" class="form-control is-invalid" placeholder="Stage #1" value="Stage #1" required>
+            <div class="invalid-feedback">Please fill in this field</div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label class="field-required">Start Date</label>
+              <input type="text" class="form-control" placeholder="17-01-2018" value="17-01-2018" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="field-required">End Date</label>
+              <input type="text" class="form-control is-valid" placeholder="17-04-2018" value="17-04-2018" required>
+              <div class="valid-feedback">Success! You've done it.</div>
+
+            </div>
+          </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <div class="row text-right">
+            <div class="form-group col-md-12">
+              <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-success" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal "Delete Stage" -->
+<div class="modal fade" id="modalDeleteStage" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete a Stage?</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>Do you really want to delete this stage?</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal "Delete Stage" in case of existing tasks/sessions -->
+<div class="modal fade" id="modalDeleteStageError" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Error</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>This Stage cannot be deleted because it is not empty.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>

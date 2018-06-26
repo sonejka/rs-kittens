@@ -134,6 +134,10 @@ body {
 
   padding: 0.5rem 0 3rem;
 
+  .card {
+    margin-top: -2px;
+  }
+
   .card.past {
     .card-header .btn-link {
       color: #bbb;
@@ -179,6 +183,23 @@ body {
       text-align: left;
     }
   }
+}
+
+
+
+.badge-secondary-gray {
+  color: #1a1a1a;
+  background-color: #eee;
+}
+
+.badge-secondary-gray[href]:hover, .badge-secondary-gray[href]:focus {
+  color: #1a1a1a;
+  text-decoration: none;
+  background-color: #e6e5e5;
+}
+
+.badge-primary a {
+  color: #fff;
 }
 
 
