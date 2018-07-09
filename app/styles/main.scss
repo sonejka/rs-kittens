@@ -164,7 +164,7 @@ h4.badge-info {
     }
   }
 
-  .card-header {
+  & > .card > .card-header {
     padding: 0;
     .btn.btn-link {
       position: relative;
@@ -196,6 +196,23 @@ h4.badge-info {
       }
     }
   }
+
+
+  .student-mark-card {
+    .card-header {
+
+     a {
+       line-height: 1rem;
+     }
+    }
+    .student-avatar {
+      float: right;
+      max-width: 50px;
+      margin-left: 10px;
+    }
+
+  }
+
 }
 
 .schedule-desc--mentor {
@@ -205,6 +222,17 @@ h4.badge-info {
     }
   }
 }
+
+
+
+.student-mark-list {
+  .student-avatar {
+    width: 100%;
+    margin-bottom: 10px;
+    //max-width: 200px;
+  }
+}
+
 
 
 /*------------------------------------*\
