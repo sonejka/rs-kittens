@@ -254,9 +254,16 @@ h4.badge-info {
    TABLE Score
 \*------------------------------------*/
 
-.table-score {
+.table-student-list,
+.table-mentor-list {
   a {
     color: #0278b8;
+  }
+
+  ul, p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   @media (max-width: $screen-tablet) {
