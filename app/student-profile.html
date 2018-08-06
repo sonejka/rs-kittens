@@ -49,212 +49,423 @@
 </nav>
 
 <main role="main" class="container">
-      <h2>Student Profile</h2>
-      <small class="form-text text-muted">
-        Please, provide valid info. It's needed to our HRs to get in touch with you.
-      </small>
-      <form>
+  <h2>Student Profile</h2>
+  <small class="form-text text-muted">
+    Please, provide valid info. It's needed to our HRs to get in touch with you.
+  </small>
+  <form>
 
-        <hr class="mb-5 mt-5">
+    <hr class="mb-5 mt-5">
+    <h5>Personal Information</h5>
 
-        <div class="row">
-          <div class="form-group col-md-6">
-            <label class="field-required" for="inputFirstNameDoc">First Name (as it appears on your passport)</label>
-            <input type="text" class="form-control" id="inputFirstNameDoc"
-                   placeholder="First Name" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label class="field-required" for="inputLastNameDoc">Last Name (as it appears on your passport)</label>
-            <input type="text" class="form-control" id="inputLastNameDoc"
-                   placeholder="Last Name" required>
-          </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="field-required" for="inputFirstNameDoc">First Name (as it appears on your passport)</label>
+          <input type="text" class="form-control" id="inputFirstNameDoc"
+                 placeholder="First Name" required>
         </div>
-
-        <div class="row">
-          <div class="form-group col-md-6">
-            <label class="field-required" for="inputFirstNameRu">First Name (in Russian)</label>
-            <input type="text" class="form-control" id="inputFirstNameRu" placeholder="First Name" required>
-          </div>
-          <div class="form-group col-md-6">
-            <label class="field-required"s for="inputLastNameRu">Last Name (in Russian)</label>
-            <input type="text" class="form-control" id="inputLastNameRu" placeholder="Last Name" required>
-          </div>
+        <div class="form-group col-md-6">
+          <label class="field-required" for="inputLastNameDoc">Last Name (as it appears on your passport)</label>
+          <input type="text" class="form-control" id="inputLastNameDoc"
+                 placeholder="Last Name" required>
         </div>
+      </div>
 
-        <hr class="mb-5 mt-5">
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label class="field-required" for="inputFirstNameRu">First Name (in Russian)</label>
+          <input type="text" class="form-control" id="inputFirstNameRu" placeholder="First Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="field-required" s for="inputLastNameRu">Last Name (in Russian)</label>
+          <input type="text" class="form-control" id="inputLastNameRu" placeholder="Last Name" required>
+        </div>
+      </div>
 
-        <div class="row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <select id="inputCity" class="form-control" required>
-              <option>Minsk</option>
-              <option>Gomel</option>
-              <option>Grodno</option>
-              <option>Mogilev</option>
-              <option>Brest</option>
-              <option>Bryansk</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="inputCity">City</label>
+          <select id="inputCity" class="form-control" required>
+            <option>Minsk</option>
+            <option>Gomel</option>
+            <option>Grodno</option>
+            <option>Mogilev</option>
+            <option>Brest</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
 
-            <label class="field-required" for="inputPhone">Phone (in the form 8-XXX-XXX-XX-XX)</label>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label class="field-required">Birth Date</label>
+          <input type="text" class="form-control" placeholder="12-08-1997" required>
+        </div>
+      </div>
 
+      <div class="row">
 
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">8-</span>
+        <div class="form-group col-md-12">
+          <label class="field-required" for="inputFirstNameRu">Gender</label>
+
+          <div class="row">
+
+            <div class="form-group col">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio8" value="option1">
+                <label class="form-check-label" for="inlineRadio8">Male</label>
               </div>
-              <input required type="tel" pattern="(\+?\d[- .]*){9,13}" class="form-control" id="inputPhone" placeholder="111-111-11-11" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-md-12">
-            <label class="field-required" for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
-          </div>
-        </div>
-        <hr class="mb-5 mt-5">
-        <div class="row">
-          <div class="form-group col-md-12">
-            <label for="university">Select Your University</label>
-            <select id="university" class="form-control">
-              <option value="BSUIR">Belarusian State University of Informatics And Radioelectronics</option>
-              <option value="BSU">Belarusian State University</option>
-              <option value="BNTU">Belarusian National Technical University</option>
-              <option value="BSEU">Belarus State Economic University</option>
-              <option value="BSATU">Belarusian State Agrarian Technical University</option>
-              <option value="MREC">Minsk Radio Engineering College</option>
-              <option value="MSLU">Minsk State Linguistic University</option>
-              <option value="BSPC">Brest State Polytechnical College</option>
-              <option value="BryanskSTU">Bryansk State Technical University</option>
-              <option value="BrSTU">Brest State Polytechnical College</option>
-              <option value="ICKS">Institute of Contemporary Knowledge Shirokova</option>
-              <option value="VSU">Vitebsk State University</option>
-              <option value="Other">Other University</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-9">
-            <label for="facultyTitle">Select Your Faculty</label>
-            <select id="facultyTitle" class="form-control">
-              <option value="Faculty of Civil Engineering">Faculty of Civil Engineering</option>
-              <option value="Electronic Information Systems">Electronic Information Systems</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="form-group col-md-3">
-            <label for="graduationYear">Select Your Graduation year</label>
-            <select id="graduationYear" class="form-control">
-              <option value="Earlier">Earlier</option>
-              <option value="2004">2004</option>
-              <option value="2005">2005</option>
-              <option value="2006">2006</option>
-              <option value="2007">2007</option>
-              <option value="2008">2008</option>
-              <option value="2009">2009</option>
-              <option value="2010">2010</option>
-              <option value="2011">2011</option>
-              <option value="2012">2012</option>
-              <option value="2013">2013</option>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-12">
-            <label for="faculty">Select Your English Level</label>
-            <select id="faculty" class="form-control">
-              <option value="A1 (Beginner)">A1 (Beginner)</option>
-              <option value="A2 (Elementary English)">A2 (Elementary English)</option>
-              <option value="B1 (Intermediate English)">B1 (Intermediate English)</option>
-              <option value="B2 (Upper-Intermediate English)">B2 (Upper-Intermediate English)</option>
-              <option value="C1 (Advanced English)">C1 (Advanced English)</option>
-              <option value="C2 (Proficiency English)">C2 (Proficiency English)</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group col-md-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="epamCheck">
-              <label class="form-check-label" for="epamCheck">
-                Вам нужна учебная практика в EPAM?
-              </label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="inlineRadio9" value="option2">
+                <label class="form-check-label" for="inlineRadio9">Female</label>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="form-group col-md-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="epamCheck">
-              <label class="form-check-label" for="epamCheck">
+      </div>
+
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label class="field-required">T-Shirt Size</label>
+          <div class="row">
+
+            <div class="form-group col">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">XS</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">S</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio3" value="option1">
+                <label class="form-check-label" for="inlineRadio3">M</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio4" value="option2">
+                <label class="form-check-label" for="inlineRadio4">L</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio5" value="option1">
+                <label class="form-check-label" for="inlineRadio5">XL</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio6" value="option2">
+                <label class="form-check-label" for="inlineRadio6">XXL</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio7" value="option1">
+                <label class="form-check-label" for="inlineRadio7">XXXL</label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <h5>Contacts</h5>
+
+    <div class="jumbotron">
+      <div class="row">
+        <div class="form-group col-md-12">
+
+          <label class="field-required" for="inputPhone">Phone (in the form 8-XXX-XXX-XX-XX)</label>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">8-</span>
+            </div>
+            <input required type="tel" pattern="(\+?\d[- .]*){9,13}" class="form-control" id="inputPhone"
+                   placeholder="111-111-11-11" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label class="field-required" for="inputEmail4">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="inputEmail5">Your nickname at Skype</label>
+          <input type="text" class="form-control" id="inputEmail5" placeholder="ivan.ivanov">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="inputEmail5">Your nickname at Telegram</label>
+          <input type="text" class="form-control" id="inputEmail5" placeholder="@ivan.ivanov">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="input53">Other contact</label>
+          <input type="text" class="form-control" id="input53" placeholder="Messenger Name: @nickname">
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <h5>Education</h5>
+
+    <div class="jumbotron">
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="university">Select Your University</label>
+          <select id="university" class="form-control">
+            <option value="BSUIR">Belarusian State University of Informatics And Radioelectronics</option>
+            <option value="BSU">Belarusian State University</option>
+            <option value="BNTU">Belarusian National Technical University</option>
+            <option value="BSEU">Belarus State Economic University</option>
+            <option value="BSATU">Belarusian State Agrarian Technical University</option>
+            <option value="MREC">Minsk Radio Engineering College</option>
+            <option value="MSLU">Minsk State Linguistic University</option>
+            <option value="BSPC">Brest State Polytechnical College</option>
+            <option value="BryanskSTU">Bryansk State Technical University</option>
+            <option value="BrSTU">Brest State Polytechnical College</option>
+            <option value="ICKS">Institute of Contemporary Knowledge Shirokova</option>
+            <option value="VSU">Vitebsk State University</option>
+            <option value="Other">Other University</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-9">
+          <label for="facultyTitle">Select Your Faculty</label>
+          <select id="facultyTitle" class="form-control">
+            <option value="Faculty of Civil Engineering">Faculty of Civil Engineering</option>
+            <option value="Electronic Information Systems">Electronic Information Systems</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="graduationYear">Select Your Graduation year</label>
+          <select id="graduationYear" class="form-control">
+            <option value="Earlier">Earlier</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="faculty">Select Your English Level</label>
+          <select id="faculty" class="form-control">
+            <option value="A1 (Beginner)">A1 (Beginner)</option>
+            <option value="A2 (Elementary English)">A2 (Elementary English)</option>
+            <option value="B1 (Intermediate English)">B1 (Intermediate English)</option>
+            <option value="B2 (Upper-Intermediate English)">B2 (Upper-Intermediate English)</option>
+            <option value="C1 (Advanced English)">C1 (Advanced English)</option>
+            <option value="C2 (Proficiency English)">C2 (Proficiency English)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="epamCheck">
+            <label class="form-check-label" for="epamCheck">
+              Вам нужна учебная практика в EPAM?
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="epamCheck">
+            <label class="form-check-label" for="epamCheck">
               Вам нужно распределение в EPAM после обучения в ВУЗе?
-              </label>
+            </label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h5>Employment history</h5>
+
+    <div class="jumbotron">
+
+      <div class="row">
+        <div class="form-group col">
+          <label for="employmentHistory">Describe your employment history</label>
+          <textarea class="form-control" id="employmentHistory" rows="3"></textarea>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="form-group form-check">
+          <label class="field-required">Your Front-end Experience</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio111" value="option111">
+                <label class="form-check-label" for="inlineRadio1"> no experience</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio11" value="option11">
+                <label class="form-check-label" for="inlineRadio1"> less than 1 year</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio12" value="option12">
+                <label class="form-check-label" for="inlineRadio2">less than 2 years</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio13" value="option13">
+                <label class="form-check-label" for="inlineRadio3">2-5 years</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio14" value="option14">
+                <label class="form-check-label" for="inlineRadio4">more than 5 years</label>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-
-        <hr class="mb-5 mt-5">
-
-        <div class="row">
-          <div class="form-group col-md-12">
-            <label for="employmentHistory">Employment History</label>
-            <textarea class="form-control" id="employmentHistory" rows="3"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="epamCheck">
-              <label class="form-check-label" for="epamCheck">
-                Is EPAM employee?
-              </label>
+      <div class="row">
+        <div class="form-group form-check">
+          <label class="field-required">I studied at the RSSchool</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
             </div>
           </div>
         </div>
-        <hr class="mb-5 mt-5">
+      </div>
 
-        <div class="row">
-          <div class="form-group col-md-12">
-            <label for="notesText">Notes</label>
-            <textarea class="form-control" id="notesText" rows="3"></textarea>
-          </div>
-        </div>
-        <div class="row">
-          <div class="form-group col-md-12">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="subscribeCheck">
-              <label class="form-check-label" for="subscribeCheck">
-                Subscribe to email notifications?
-              </label>
+      <div class="row">
+        <div class="form-group form-check">
+          <label class="field-required">I was a mentor at the RSSchool</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="form-group col">
+          <label>Is EPAM Employee?</label>
 
-        <div class="row text-center">
-          <div class="form-group col-md-12">
-          <button type="submit" class="btn btn-primary mb-5">Save Information</button>
+          <div class="row">
+
+            <div class="form-group form-check">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gender">
+                <label class="form-check-label" for="inlineRadio8">Yes, I am</label>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
+      </div>
 
-  </main>
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputEmail6">EPAM Email</label>
+          <input type="email" class="form-control" id="inputEmail6" placeholder="Epam Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputEmail54">EPAM UPSA ID (if you have one. It should contain 19 digits)</label>
+          <input type="text" class="form-control" id="inputEmail54" placeholder="Epam ID">
+        </div>
+      </div>
+
+
+      <!--<div class="row">-->
+      <!--<div class="form-group col-md-12">-->
+      <!--<label for="notesText">Write some sentences about yourself</label>-->
+      <!--<textarea class="form-control" id="notesText" rows="3"></textarea>-->
+      <!--</div>-->
+      <!--</div>-->
+
+    </div>
+
+
+    <h5>Other</h5>
+
+    <div class="jumbotron">
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="notesText">Additional Information</label>
+          <textarea class="form-control" id="notesText" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="subscribeCheck">
+            <label class="form-check-label" for="subscribeCheck">
+              Subscribe to email notifications?
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="form-group col-md-12">
+        <button type="submit" class="btn btn-primary mb-5">Save Information</button>
+      </div>
+    </div>
+  </form>
+
+</main>
 
 <div class="footer">
   <p>&copy; 2018 RS Crew</p>

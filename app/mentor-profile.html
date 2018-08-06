@@ -55,8 +55,8 @@
     Please, provide valid info. It's needed to our HRs to get in touch with you.
   </small>
   <form>
-
     <hr class="mb-5 mt-5">
+
     <h5>Personal Information</h5>
 
     <div class="jumbotron">
@@ -85,7 +85,29 @@
       </div>
 
       <div class="row">
-        <div class="form-group col-md-3">
+        <div class="form-group col-md-12">
+          <label for="inputCity">City</label>
+          <select id="inputCity" class="form-control" required>
+            <option>Minsk</option>
+            <option>Gomel</option>
+            <option>Grodno</option>
+            <option>Mogilev</option>
+            <option>Brest</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label class="field-required">Birth Date</label>
+          <input type="text" class="form-control" placeholder="12-08-1997" required>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="form-group col-md-12">
           <label class="field-required" for="inputFirstNameRu">Gender</label>
 
           <div class="row">
@@ -102,24 +124,12 @@
             </div>
           </div>
         </div>
-        <div class="form-group col-md-3">
-          <label class="field-required" for="inputFirstNameRu">T-Shirt Fashion</label>
 
-          <div class="row">
+      </div>
 
-            <div class="form-group col">
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="tShirtFashion" id="inlineRadio10" value="option1">
-                <label class="form-check-label" for="inlineRadio10">Male</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="tShirtFashion" id="inlineRadio11" value="option2">
-                <label class="form-check-label" for="inlineRadio11">Female</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="form-group col-md-6">
+
+      <div class="row">
+        <div class="form-group col-md-12">
           <label class="field-required">T-Shirt Size</label>
           <div class="row">
 
@@ -159,26 +169,15 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    <hr class="mb-5 mt-5">
+
     <h5>Contacts</h5>
 
     <div class="jumbotron">
       <div class="row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <select id="inputCity" class="form-control" required>
-            <option>Minsk</option>
-            <option>Gomel</option>
-            <option>Grodno</option>
-            <option>Mogilev</option>
-            <option>Brest</option>
-            <option>Bryansk</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group col-md-6">
+        <div class="form-group col-md-12">
 
           <label class="field-required" for="inputPhone">Phone (in the form 8-XXX-XXX-XX-XX)</label>
 
@@ -197,27 +196,6 @@
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
         </div>
       </div>
-      <div class="row">
-        <div class="form-group col-md-12">
-          <label for="inputEmail6">EPAM Email (if you have)</label>
-          <input type="email" class="form-control" id="inputEmail6" placeholder="Epam Email">
-        </div>
-      </div>
-      <div class="row">
-        <div class="form-group col-md-12">
-          <label for="inputEmail5">EPAM ID (if you have one. It should contain 19 digits)</label>
-          <input type="text" class="form-control" id="inputEmail5" placeholder="Epam ID">
-        </div>
-      </div>
-
-      <hr class="mb-5 mt-5">
-
-      <div class="row">
-        <div class="form-group col-md-12">
-          <label class="field-required" for="inputEmail5">GitHub URL to your account (It is necessary for task checking)</label>
-          <input type="text" class="form-control" id="inputEmail5" placeholder="https://github.com/username">
-        </div>
-      </div>
 
       <div class="row">
         <div class="form-group col-md-12">
@@ -233,82 +211,134 @@
         </div>
       </div>
 
-
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="input53">Other contact</label>
+          <input type="text" class="form-control" id="input53" placeholder="Messenger Name: @nickname">
+        </div>
+      </div>
 
     </div>
-    <hr class="mb-5 mt-5">
-    <h5>Experience</h5>
+
+    <h5>Employment history</h5>
 
     <div class="jumbotron">
 
-      <div class="form-group">
-        <label class="field-required">Your Front-end Experience</label>
-        <div class="row">
-          <div class="form-group col">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1"> less than 1 year</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">less than 2 years</label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio3" value="option1">
-              <label class="form-check-label" for="inlineRadio3">2-5 years</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio4" value="option2">
-              <label class="form-check-label" for="inlineRadio4">more than 5 years</label>
-            </div>
-          </div>
+      <div class="row">
+        <div class="form-group col">
+          <label for="employmentHistory">Describe your employment history</label>
+          <textarea class="form-control" id="employmentHistory" rows="3"></textarea>
         </div>
       </div>
 
-      <div class="form-group">
-        <label class="field-required">I studied at the RSSchool</label>
-        <div class="row">
-          <div class="form-group col">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">Yes</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">No</label>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="form-group">
-        <label class="field-required">I was a mentor at the RSSchool</label>
-        <div class="row">
-          <div class="form-group col">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">Yes</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">No</label>
+      <div class="row">
+        <div class="form-group form-check">
+          <label class="field-required">Your Front-end Experience</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio111" value="option111">
+                <label class="form-check-label" for="inlineRadio1"> no experience</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio11" value="option11">
+                <label class="form-check-label" for="inlineRadio1"> less than 1 year</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio12" value="option12">
+                <label class="form-check-label" for="inlineRadio2">less than 2 years</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio13" value="option13">
+                <label class="form-check-label" for="inlineRadio3">2-5 years</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio14" value="option14">
+                <label class="form-check-label" for="inlineRadio4">more than 5 years</label>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="form-group col-md-12">
-          <label for="notesText">Write some sentences about yourself</label>
-          <textarea class="form-control" id="notesText" rows="3"></textarea>
+        <div class="form-group form-check">
+          <label class="field-required">I studied at the RSSchool</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="form-group form-check">
+          <label class="field-required">I was a mentor at the RSSchool</label>
+          <div class="row">
+            <div class="form-group col">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="form-group col">
+          <label>Is EPAM Employee?</label>
+
+          <div class="row">
+
+            <div class="form-group form-check">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gender">
+                <label class="form-check-label" for="inlineRadio8">Yes, I am</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputEmail6">EPAM Email</label>
+          <input type="email" class="form-control" id="inputEmail6" placeholder="Epam Email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col">
+          <label for="inputEmail54">EPAM UPSA ID (if you have one. It should contain 19 digits)</label>
+          <input type="text" class="form-control" id="inputEmail54" placeholder="Epam ID">
+        </div>
+      </div>
+
+
+      <!--<div class="row">-->
+      <!--<div class="form-group col-md-12">-->
+      <!--<label for="notesText">Write some sentences about yourself</label>-->
+      <!--<textarea class="form-control" id="notesText" rows="3"></textarea>-->
+      <!--</div>-->
+      <!--</div>-->
 
     </div>
 
 
-    <hr class="mb-5 mt-5">
     <h5>Mentoring</h5>
 
     <div class="jumbotron">
@@ -318,12 +348,12 @@
         <div class="row">
           <div class="form-group col">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">Ony second (&approx; 15 weeks) </label>
+              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio101" value="option101">
+              <label class="form-check-label" for="inlineRadio101">Only second (&approx; 15 weeks) </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">Second & Third (&approx; 22 weeks)</label>
+              <input class="form-check-input" type="radio" name="tShirtSize" id="inlineRadio102" value="option102">
+              <label class="form-check-label" for="inlineRadio102">Second & Third (&approx; 22 weeks)</label>
             </div>
           </div>
         </div>
@@ -358,6 +388,29 @@
         </div>
       </div>
 
+    </div>
+
+
+    <h5>Other</h5>
+
+    <div class="jumbotron">
+
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="notesText">Additional Information</label>
+          <textarea class="form-control" id="notesText" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="subscribeCheck">
+            <label class="form-check-label" for="subscribeCheck">
+              Subscribe to email notifications?
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="row text-center">
