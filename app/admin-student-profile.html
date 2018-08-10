@@ -56,9 +56,9 @@
     <div class="row">
       <div class="col-md-3">
 
-        <p class="mb-5"><img class="avatar width-full rounded-2"
-                             src="https://avatars1.githubusercontent.com/u/31858127?s=460&amp;v=4" alt=""
-                             style="width: 100%;"></p>
+        <p class="mb-2"><img class="avatar"
+                             src="https://avatars1.githubusercontent.com/u/31858127?s=460&amp;v=4" alt=""></p>
+        <a class="text-danger" href="#" data-toggle="modal" data-target="#exampleModalCenter">Expel a student</a>
 
       </div>
 
@@ -197,9 +197,9 @@
         </div>
 
         <div class="row">
-        <div class="col-md-4">Is EPAM employee?</div>
-        <div class="col-md-8">Yes</div>
-      </div>
+          <div class="col-md-4">Is EPAM employee?</div>
+          <div class="col-md-8">Yes</div>
+        </div>
 
         <div class="row">
           <div class="col-md-4">EPAM Email:</div>
@@ -222,77 +222,52 @@
             eu nulla luctus ullamcorper. </p></div>
         </div>
 
-
         <hr>
 
         <h4 class="badge badge-info">Task Progress</h4>
 
         <div class="row">
-          <div class="col-md-4">stage #1 score</div>
-          <div class="col-md-8">90</div>
+          <div class="col-md-4"><p class="text-primary">Stage #1 score</p>
+          </div>
+          <div class="col-md-8">
+            <p>Score: <span class="badge badge-primary">56 out of 200</span></p>
+            <h6>Mentor Comment</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+              lorem eu nulla luctus ullamcorper.</p></div>
         </div>
 
         <div class="row">
-          <div class="col-md-4">markup-1</div>
-          <div class="col-md-8">75</div>
+          <div class="col-md-4"><p class="text-primary">Presentation</p>
+          </div>
+          <div class="col-md-8">
+            <p>Score: <span class="badge badge-primary">55 out of 100</span></p>
+            <h6>Student Comment</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+              lorem eu nulla luctus ullamcorper.</p>
+          </div>
         </div>
 
         <div class="row">
-          <div class="col-md-4">JSTest</div>
-          <div class="col-md-8">57</div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">Тема презентации</div>
-          <div class="col-md-8">Scrum</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">code-jam1</div>
-          <div class="col-md-8">75</div>
+          <div class="col-md-4"><p class="text-primary">Codewars</p>
+          </div>
+          <div class="col-md-8">
+            <p>Score: <span class="badge badge-primary">76 out of 100</span></p>
+            <h6>Mentor Comment</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+              lorem eu nulla luctus ullamcorper.</p></div>
         </div>
 
         <div class="row">
-          <div class="col-md-4">code-jam2-dom</div>
-          <div class="col-md-8">57</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">Codewars</div>
-          <div class="col-md-8">75</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">match-match-game</div>
-          <div class="col-md-8">57</div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">CSS Recipes & Layouts</div>
-          <div class="col-md-8">90</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">JSCore Interview</div>
-          <div class="col-md-8">75</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">Presentation</div>
-          <div class="col-md-8">57</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">CSS QD</div>
-          <div class="col-md-8">57</div>
-        </div>
-
-        <div class="row">
-          <div class="col-4">WSChallenge</div>
-          <div class="col-8">57</div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">code-jam4</div>
-          <div class="col-md-8">57</div>
+          <div class="col-md-4"><p class="text-primary">Match-Match game</p>
+          </div>
+          <div class="col-md-8">
+            <p>Score: <span class="badge badge-primary">83 out of 120</span></p>
+            <h6>Student Comment</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+              lorem eu nulla luctus ullamcorper.</p>
+            <h6>Mentor Comment</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac elit lacus. In a
+              lorem eu nulla luctus ullamcorper.</p></div>
         </div>
       </div>
     </div>
@@ -336,6 +311,35 @@
 <script src="scripts/main.js"></script>
 <!-- endbuild -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Student Expulsion</h5>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>Do you really want to expel Ivan Ivanov?</p>
+        <form action="#">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Please, explain the reason</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
