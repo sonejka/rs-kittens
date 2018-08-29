@@ -15,13 +15,16 @@ $screen-phone: 480px;
   padding: 0.2em 0;
 }
 
-
 /*------------------------------------*\
    COMMON Styles
 \*------------------------------------*/
 
 main.container {
-  padding: 80px 15px;
+  padding: 60px 15px;
+
+  @media (max-width: $screen-tablet) {
+    padding: 40px 10px;
+  }
 }
 
 .field-required:after {
@@ -33,6 +36,11 @@ main.container {
   padding: 3px 4px 1px;
   font-size: 0.875rem;
   line-height: 1.5;
+
+  &.badge-primary {
+    color: #000;
+    background: #ffff00;
+  }
 }
 
 h4.badge-info {
@@ -64,23 +72,58 @@ h4.badge-info {
   }
 }
 
-
 /*------------------------------------*\
    NAV Styles
 \*------------------------------------*/
-.navbar {
+.navbar-brand img {
+  height: 70px;
+  @media (max-width: $screen-phone) {
+    height: 50px;
+  }
+}
+
+.navbar.container {
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
+  justify-content: space-between;
+  align-items: start;
 
-  .container {
-    position: relative;
+  .nav-general {
+    @media (max-width: $screen-tablet) {
 
-    .logged-user {
-      position: absolute;
-      right: 15px;
-      top: 5px;
-      text-transform: capitalize;
+      .dropdown-item {
+        padding: 0.25rem 0.5rem;
+      }
+
+      .btn.dropdown-toggle {
+        padding: 0.25rem;
+      }
     }
+  }
+
+  .dropdown-item {
+    i {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  .dropdown-menu-right {
+    right: 0;
+    left: auto;
+  }
+
+  .navbar-brand {
+    padding-top: 0;
+    @media (max-width: $screen-tablet) {
+      margin-right: .5rem;
+    }
+  }
+
+  .nav-avatar {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
   }
 
   @media (max-width: $screen-tablet) {
@@ -96,15 +139,54 @@ h4.badge-info {
 
 }
 
-.navbar-brand img {
-  height: 100px;
-  @media (max-width: $screen-phone) {
-    height: 50px;
+.nav-stream-container {
+  @extend .container;
+  margin-top: 10px;
+}
+
+.stream-heading {
+  text-align: right;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 20px 0 0;
+
+ span {
+    color: #000;
+    background: #fff;
+    padding: 0.2em 1em;
+    font-size: 1rem;
+    border: 2px solid #000;
   }
 }
 
-.nav-item {
-  margin: 0;
+.nav-stream {
+  //margin: -15px 0 0 0;
+  //padding: 20px 10px 10px 10px;
+  //border: 10px solid #ffff00;
+  //justify-content: flex-end;
+
+  margin: -13px 0 0 0;
+  padding: 25px 0 10px;
+  border:  solid #000;
+  border-width: 2px 0 0;
+  justify-content: center;
+
+  @media (max-width: $screen-tablet) {
+    padding: 25px 10px 10px;
+    justify-content: space-between;
+    border: 2px solid #000;
+  }
+
+  .nav-item {
+    margin: 0;
+
+    @media (max-width: $screen-tablet) {
+      .nav-link {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+
 }
 
 /*------------------------------------*\
@@ -228,13 +310,12 @@ h4.badge-info {
     }
   }
 
-
   .student-mark-card {
     .card-header {
 
-     a {
-       line-height: 1rem;
-     }
+      a {
+        line-height: 1rem;
+      }
     }
     .student-avatar {
       float: right;
@@ -254,8 +335,6 @@ h4.badge-info {
   }
 }
 
-
-
 .student-mark-list {
   .student-avatar {
     width: 100%;
@@ -263,8 +342,6 @@ h4.badge-info {
     //max-width: 200px;
   }
 }
-
-
 
 /*------------------------------------*\
    TABLE Score

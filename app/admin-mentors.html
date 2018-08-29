@@ -30,26 +30,56 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<nav class="navbar navbar-light">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo-rsschool.svg" alt="RS Logo"></a>
-    <p class="logged-user">Hello, Ivan! <a href="#">Sign out</a></p>
+<nav class="navbar navbar-expand-lg navbar-light container">
+  <a class="navbar-brand" href="index.html"><img src="images/logo-rsschool.svg" alt="RS Logo"></a>
+  <div class="nav-general">
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        Courses
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item active" href="admin-schedule.html">Stream2018Q3</a>
+        <a class="dropdown-item" href="admin-schedule.html">Stream2018Angular</a>
+      </div>
+    </div>
 
-    <ul class="nav nav-pills justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="admin-schedule.html">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="admin-students.html">Students</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="admin-mentors.html">Mentors</a>
-      </li>
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        <img class="nav-avatar" src="https://avatars1.githubusercontent.com/u/8710230?s=40&v=4" alt="Sonejka Logo">
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <p class="dropdown-item">Signed in as <strong>Sonejka@Kseniyas-Mbp</strong></p>
+        <div class="dropdown-divider"></div>
 
-    </ul>
-
+        <a class="dropdown-item" href="admin-profile.html"><i class="far fa-address-card"></i> Your Profile</a>
+        <a class="dropdown-item" href="admin-settings.html"><i class="fas fa-cogs"></i> Settings </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+      </div>
+    </div>
   </div>
 </nav>
+<div class="nav-stream-container">
+  <p class="stream-heading">
+    <span>Stream2018Q3</span>
+  </p>
+  <ul class="nav nav-pills nav-stream">
+    <li class="nav-item">
+      <a class="nav-link" href="admin-schedule.html"><i class="far fa-calendar-alt"></i> Schedule</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="admin-mentors.html"><i class="fas fa-user-ninja"></i> Mentors</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="admin-students.html"><i class="fas fa-users"></i> Students</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="far fa-comments"></i> Chat</a>
+    </li>
+  </ul>
+</div>
 
 <main role="main" class="container">
 

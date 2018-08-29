@@ -26,36 +26,114 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<nav class="navbar navbar-light">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="images/logo-rsschool.svg" alt="RS Logo"></a>
+<nav class="navbar navbar-expand-lg navbar-light container">
+  <a class="navbar-brand" href="index.html"><img src="images/logo-rsschool.svg" alt="RS Logo"></a>
+  <div class="nav-general">
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        Your Courses
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="student-schedule.html">Stream2018Q3</a>
+        <a class="dropdown-item" href="student-schedule.html">Stream2018Angular</a>
+      </div>
+    </div>
 
-    <p class="logged-user">Hello, Ivan! <a href="#">Sign out</a> </p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+        <img class="nav-avatar" src="https://avatars1.githubusercontent.com/u/8710230?s=40&v=4" alt="Sonejka Logo">
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <p class="dropdown-item">Signed in as <strong>Sonejka@Kseniyas-Mbp</strong></p>
+        <div class="dropdown-divider"></div>
 
-    <ul class="nav nav-pills justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="schedule.html">Schedule</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="student-tasks.html">Tasks</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="student-profile.html">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="student-mentor.html">Your mentor</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="student-mentor.html">Settings <i class="fas fa-cog"></i></a>
-      </li>
-    </ul>
+        <a class="dropdown-item" href="student-profile.html"><i class="far fa-address-card"></i> Your Profile</a>
+        <a class="dropdown-item" href="student-settings.html"><i class="fas fa-cogs"></i> Settings </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+      </div>
+    </div>
   </div>
 </nav>
 
 <main role="main" class="container">
-  <h2>Set up your study space</h2>
+  <h2>Settings</h2>
+
+  <h5>Notifications</h5>
+  <div class="jumbotron">
+    <h6 class="mb-3">When do you want to get notifications...</h6>
+    <form action="">
+      <div class="form-group row">
+        <div class="col-sm-3">before the lecture?</div>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 15 min
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 1 hour
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 2 hours
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Never
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-3">before the task deadline?</div>
+        <div class="col-sm-9">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 2 hours
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 1 day
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              in 3 days
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Never
+            </label>
+          </div>
+        </div>
+      </div>
 
 
+    </form>
+
+  </div>
 </main>
 
 <div class="footer">
