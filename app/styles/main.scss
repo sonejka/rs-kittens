@@ -8,16 +8,28 @@ $screen-desktop: 1024px;
 $screen-tablet: 767px;
 $screen-phone: 480px;
 
+$color-yellow: #ffff00;
+$color-black: #000000;
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: $color-black;
   padding: 0.2em 0;
 }
 
 /*------------------------------------*\
    COMMON Styles
 \*------------------------------------*/
+
+body {
+  font-size: 1rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
 
 main.container {
   padding: 60px 15px;
@@ -38,9 +50,14 @@ main.container {
   line-height: 1.5;
 
   &.badge-primary {
-    color: #000;
-    background: #ffff00;
+    color: $color-black;
+    background: $color-yellow;
   }
+}
+
+mark, .mark {
+  color: $color-black;
+  background: $color-yellow;
 }
 
 h4.badge-info {
@@ -71,6 +88,116 @@ h4.badge-info {
     margin: 5px;
   }
 }
+
+.jumbotron.light {
+  background: transparent;
+  padding: 4rem 0;
+}
+
+.jumbotron.accent {
+  background: #ffffcc;
+  padding: 1rem;
+}
+
+/*------------------------------------*\
+   LANDING PAGE
+\*------------------------------------*/
+
+.landing-page {
+  font-family: "Exo 2", sans-serif;
+  color: $color-black;
+
+
+  section {
+    padding: 5rem 0;
+
+    h3 {
+      margin: 0 0 4rem ;
+    }
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+
+  .badge {
+    white-space: normal;
+  }
+}
+
+.learning-path {
+  p {
+    margin: 0 ;
+  }
+  .stage-number {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 26px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    background: $color-yellow;
+  }
+}
+
+a.accent-link {
+  color: #0080ff;
+
+  &:hover {
+    color: #0000ff;
+  }
+}
+
+/*------------------------------------*\
+   PARTNERS List
+\*------------------------------------*/
+
+.partner-list {
+  padding: 0;
+  -webkit-flex-flow: wrap row;
+  flex-flow: row wrap;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  li {
+    max-width: 220px;
+    margin: auto;
+    padding: .5em;
+    box-sizing: border-box;
+    text-align: center;
+
+    a {
+      img {
+        max-width: 140px;
+        max-height: 150px;
+        opacity: 0.4;
+        transition: opacity .5s;
+
+        @media (max-width: $screen-tablet) {
+          max-width: 100px;
+        }
+      }
+
+      &:hover {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+
+
+  }
+}
+
+
 
 /*------------------------------------*\
    NAV Styles
@@ -387,20 +514,6 @@ h4.badge-info {
   }
 }
 
-.partner-list {
-
-  align-items: center;
-
-  div[class*="col-"] {
-    text-align: center;
-  }
-
-  img {
-    max-width: 200px;
-    vertical-align: middle;
-    opacity: .2;
-  }
-}
 
 /*------------------------------------*\
    Sticky FOOTER Styles
