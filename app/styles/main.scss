@@ -10,7 +10,7 @@ $screen-desktop: 1024px;
 $screen-tablet: 767px;
 $screen-phone: 480px;
 
-$color-yellow: #ffff00;
+$color-yellow: #ffff80;
 $color-black: #000000;
 
 .browserupgrade {
@@ -30,7 +30,12 @@ body {
 
 b,
 strong {
-  font-weight: bold;
+  font-weight: 500;
+}
+
+p,
+ol, ul, dl {
+  font-weight: 300;
 }
 
 main.container {
@@ -58,6 +63,9 @@ main.container {
   &.badge-primary {
     color: $color-black;
     background: $color-yellow;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
   }
 }
 
@@ -176,7 +184,7 @@ h4.badge-info {
   display: flex;
 
   li {
-    max-width: 220px;
+    max-width: 160px;
     margin: auto;
     padding: .5em;
     box-sizing: border-box;
@@ -184,8 +192,8 @@ h4.badge-info {
 
     a {
       img {
-        max-width: 140px;
-        max-height: 150px;
+        max-width: 100px;
+        max-height: 120px;
         opacity: 0.4;
         transition: opacity .5s;
 
@@ -281,11 +289,11 @@ h4.badge-info {
 
 .stream-heading {
   text-align: right;
-  font-weight: bold;
+  font-weight: 400;
   margin: 0;
   padding: 0 20px 0 0;
 
- span {
+  span {
     color: #000;
     background: $color-yellow;
     padding: 0.2em 1em;
@@ -308,7 +316,7 @@ h4.badge-info {
 
   @media (max-width: $screen-tablet) {
     padding: 25px 10px 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 2px solid #000;
   }
 
