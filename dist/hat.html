@@ -15,7 +15,15 @@
     firebase.auth().signInWithPopup(new firebase.auth.GithubAuthProvider())
       .then(function (result) {
         let githubUsername = result.additionalUserInfo.username;
-        firebase.database().ref('/result/').orderByChild('student github').equalTo(githubUsername).on('child_added', renderMyMentor);
+        firebase.database().ref('/result/').orderByChild('student github').equalTo(githubUsername).limitToFirst(1).once("value")
+          .then(function(snapshot) {
+            if (!snapshot.exists()) {
+              document.getElementById("contact").innerHTML = '<p> Ваш ментор не найден :( </p>'
+            }
+            else {
+              renderMyMentor(snapshot);
+            }
+          })
       })
       .catch(function (error) {
         alert(JSON.stringify(error));
@@ -24,14 +32,14 @@
   }
 
   function renderMyMentor(snap) {
-    var data = snap.val();
-    var mentor = data.interviewer;
-    var contacts = data["mentor contacts"];
+    let data = snap.val();
+    data = data[Object.keys(data)[0]];
 
-    var html = `<p><strong>Твой ментор:</strong> ${mentor}</p>
+    let mentor = data.interviewer;
+    let contacts = data["mentor contacts"];
+
+    let html = `<p><strong>Твой ментор:</strong> ${mentor}</p>
     <p><strong>Контакты:</strong> ${contacts}</p>`
 
     document.getElementById("contact").innerHTML = html;
-
-
   }</script></body></html>
