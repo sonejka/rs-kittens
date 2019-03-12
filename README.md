@@ -1,4 +1,4 @@
-# rs-kittens
+# RS kittens
 
 
 ## Site Map
